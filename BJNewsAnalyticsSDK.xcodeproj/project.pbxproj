@@ -1,0 +1,684 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A32C83802182F2FC00DB5ACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C837F2182F2FC00DB5ACA /* AppDelegate.m */; };
+		A32C83832182F2FC00DB5ACA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C83822182F2FC00DB5ACA /* ViewController.m */; };
+		A32C83862182F2FD00DB5ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32C83842182F2FD00DB5ACA /* Main.storyboard */; };
+		A32C83882182F31100DB5ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32C83872182F31100DB5ACA /* Assets.xcassets */; };
+		A32C838B2182F31100DB5ACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32C83892182F31100DB5ACA /* LaunchScreen.storyboard */; };
+		A32C838E2182F31100DB5ACA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C838D2182F31100DB5ACA /* main.m */; };
+		A32C83982182F31100DB5ACA /* BJNewsAnalyticsSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C83972182F31100DB5ACA /* BJNewsAnalyticsSDKTests.m */; };
+		A32C83A32182F31100DB5ACA /* BJNewsAnalyticsSDKUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C83A22182F31100DB5ACA /* BJNewsAnalyticsSDKUITests.m */; };
+		A32C83B62182F6AB00DB5ACA /* BJNewsAnalyticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C83B52182F6AB00DB5ACA /* BJNewsAnalyticsManager.m */; };
+		A32C83BD218309B800DB5ACA /* BJNewsAnalyticsNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C83BC218309B800DB5ACA /* BJNewsAnalyticsNetwork.m */; };
+		A32C83C02183235200DB5ACA /* BJNewsAnalyticsCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C83BF2183235200DB5ACA /* BJNewsAnalyticsCache.m */; };
+		E90EE6F78E11693C963B0780 /* libPods-BJNewsAnalyticsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8FA847959081418363824D /* libPods-BJNewsAnalyticsSDK.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A32C83942182F31100DB5ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A32C83732182F2FC00DB5ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A32C837A2182F2FC00DB5ACA;
+			remoteInfo = BJNewsAnalyticsSDK;
+		};
+		A32C839F2182F31100DB5ACA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A32C83732182F2FC00DB5ACA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A32C837A2182F2FC00DB5ACA;
+			remoteInfo = BJNewsAnalyticsSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2F3FFF17E2C1DCC481C18049 /* Pods-BJNewsAnalyticsSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJNewsAnalyticsSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJNewsAnalyticsSDK/Pods-BJNewsAnalyticsSDK.release.xcconfig"; sourceTree = "<group>"; };
+		A32C837B2182F2FC00DB5ACA /* BJNewsAnalyticsSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJNewsAnalyticsSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32C837E2182F2FC00DB5ACA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A32C837F2182F2FC00DB5ACA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A32C83812182F2FC00DB5ACA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A32C83822182F2FC00DB5ACA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A32C83852182F2FD00DB5ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A32C83872182F31100DB5ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A32C838A2182F31100DB5ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A32C838C2182F31100DB5ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A32C838D2182F31100DB5ACA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A32C83932182F31100DB5ACA /* BJNewsAnalyticsSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BJNewsAnalyticsSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32C83972182F31100DB5ACA /* BJNewsAnalyticsSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsAnalyticsSDKTests.m; sourceTree = "<group>"; };
+		A32C83992182F31100DB5ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A32C839E2182F31100DB5ACA /* BJNewsAnalyticsSDKUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BJNewsAnalyticsSDKUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A32C83A22182F31100DB5ACA /* BJNewsAnalyticsSDKUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsAnalyticsSDKUITests.m; sourceTree = "<group>"; };
+		A32C83A42182F31100DB5ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A32C83B42182F6AB00DB5ACA /* BJNewsAnalyticsManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsAnalyticsManager.h; sourceTree = "<group>"; };
+		A32C83B52182F6AB00DB5ACA /* BJNewsAnalyticsManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsAnalyticsManager.m; sourceTree = "<group>"; };
+		A32C83B82183095000DB5ACA /* BJNewsAnalyticsConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsAnalyticsConfig.h; sourceTree = "<group>"; };
+		A32C83BB218309B800DB5ACA /* BJNewsAnalyticsNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsAnalyticsNetwork.h; sourceTree = "<group>"; };
+		A32C83BC218309B800DB5ACA /* BJNewsAnalyticsNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsAnalyticsNetwork.m; sourceTree = "<group>"; };
+		A32C83BE2183235200DB5ACA /* BJNewsAnalyticsCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsAnalyticsCache.h; sourceTree = "<group>"; };
+		A32C83BF2183235200DB5ACA /* BJNewsAnalyticsCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsAnalyticsCache.m; sourceTree = "<group>"; };
+		BA8FA847959081418363824D /* libPods-BJNewsAnalyticsSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJNewsAnalyticsSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4F96309926FBEFC29DB09C /* Pods-BJNewsAnalyticsSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJNewsAnalyticsSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJNewsAnalyticsSDK/Pods-BJNewsAnalyticsSDK.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A32C83782182F2FC00DB5ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E90EE6F78E11693C963B0780 /* libPods-BJNewsAnalyticsSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32C83902182F31100DB5ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32C839B2182F31100DB5ACA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0CE288A34AD892730AFE7C13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CD4F96309926FBEFC29DB09C /* Pods-BJNewsAnalyticsSDK.debug.xcconfig */,
+				2F3FFF17E2C1DCC481C18049 /* Pods-BJNewsAnalyticsSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		408259BD7B05AE79E6A6DF78 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA8FA847959081418363824D /* libPods-BJNewsAnalyticsSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A32C83722182F2FC00DB5ACA = {
+			isa = PBXGroup;
+			children = (
+				A32C837D2182F2FC00DB5ACA /* BJNewsAnalyticsSDK */,
+				A32C83962182F31100DB5ACA /* BJNewsAnalyticsSDKTests */,
+				A32C83A12182F31100DB5ACA /* BJNewsAnalyticsSDKUITests */,
+				A32C837C2182F2FC00DB5ACA /* Products */,
+				0CE288A34AD892730AFE7C13 /* Pods */,
+				408259BD7B05AE79E6A6DF78 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A32C837C2182F2FC00DB5ACA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A32C837B2182F2FC00DB5ACA /* BJNewsAnalyticsSDK.app */,
+				A32C83932182F31100DB5ACA /* BJNewsAnalyticsSDKTests.xctest */,
+				A32C839E2182F31100DB5ACA /* BJNewsAnalyticsSDKUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A32C837D2182F2FC00DB5ACA /* BJNewsAnalyticsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A32C83B02182F48900DB5ACA /* BJNewsAnalyticsSDK */,
+				A32C837E2182F2FC00DB5ACA /* AppDelegate.h */,
+				A32C837F2182F2FC00DB5ACA /* AppDelegate.m */,
+				A32C83812182F2FC00DB5ACA /* ViewController.h */,
+				A32C83822182F2FC00DB5ACA /* ViewController.m */,
+				A32C83842182F2FD00DB5ACA /* Main.storyboard */,
+				A32C83872182F31100DB5ACA /* Assets.xcassets */,
+				A32C83892182F31100DB5ACA /* LaunchScreen.storyboard */,
+				A32C838C2182F31100DB5ACA /* Info.plist */,
+				A32C838D2182F31100DB5ACA /* main.m */,
+			);
+			path = BJNewsAnalyticsSDK;
+			sourceTree = "<group>";
+		};
+		A32C83962182F31100DB5ACA /* BJNewsAnalyticsSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				A32C83972182F31100DB5ACA /* BJNewsAnalyticsSDKTests.m */,
+				A32C83992182F31100DB5ACA /* Info.plist */,
+			);
+			path = BJNewsAnalyticsSDKTests;
+			sourceTree = "<group>";
+		};
+		A32C83A12182F31100DB5ACA /* BJNewsAnalyticsSDKUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A32C83A22182F31100DB5ACA /* BJNewsAnalyticsSDKUITests.m */,
+				A32C83A42182F31100DB5ACA /* Info.plist */,
+			);
+			path = BJNewsAnalyticsSDKUITests;
+			sourceTree = "<group>";
+		};
+		A32C83B02182F48900DB5ACA /* BJNewsAnalyticsSDK */ = {
+			isa = PBXGroup;
+			children = (
+				A32C83B42182F6AB00DB5ACA /* BJNewsAnalyticsManager.h */,
+				A32C83B52182F6AB00DB5ACA /* BJNewsAnalyticsManager.m */,
+				A32C83BA2183099600DB5ACA /* network */,
+				A32C83B72183092D00DB5ACA /* config */,
+				A32C83B92183098B00DB5ACA /* cache */,
+			);
+			path = BJNewsAnalyticsSDK;
+			sourceTree = "<group>";
+		};
+		A32C83B72183092D00DB5ACA /* config */ = {
+			isa = PBXGroup;
+			children = (
+				A32C83B82183095000DB5ACA /* BJNewsAnalyticsConfig.h */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		A32C83B92183098B00DB5ACA /* cache */ = {
+			isa = PBXGroup;
+			children = (
+				A32C83BE2183235200DB5ACA /* BJNewsAnalyticsCache.h */,
+				A32C83BF2183235200DB5ACA /* BJNewsAnalyticsCache.m */,
+			);
+			path = cache;
+			sourceTree = "<group>";
+		};
+		A32C83BA2183099600DB5ACA /* network */ = {
+			isa = PBXGroup;
+			children = (
+				A32C83BB218309B800DB5ACA /* BJNewsAnalyticsNetwork.h */,
+				A32C83BC218309B800DB5ACA /* BJNewsAnalyticsNetwork.m */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A32C837A2182F2FC00DB5ACA /* BJNewsAnalyticsSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32C83A72182F31100DB5ACA /* Build configuration list for PBXNativeTarget "BJNewsAnalyticsSDK" */;
+			buildPhases = (
+				A0B03B3D441BA5705919FA8D /* [CP] Check Pods Manifest.lock */,
+				A32C83772182F2FC00DB5ACA /* Sources */,
+				A32C83782182F2FC00DB5ACA /* Frameworks */,
+				A32C83792182F2FC00DB5ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BJNewsAnalyticsSDK;
+			productName = BJNewsAnalyticsSDK;
+			productReference = A32C837B2182F2FC00DB5ACA /* BJNewsAnalyticsSDK.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A32C83922182F31100DB5ACA /* BJNewsAnalyticsSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32C83AA2182F31100DB5ACA /* Build configuration list for PBXNativeTarget "BJNewsAnalyticsSDKTests" */;
+			buildPhases = (
+				A32C838F2182F31100DB5ACA /* Sources */,
+				A32C83902182F31100DB5ACA /* Frameworks */,
+				A32C83912182F31100DB5ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A32C83952182F31100DB5ACA /* PBXTargetDependency */,
+			);
+			name = BJNewsAnalyticsSDKTests;
+			productName = BJNewsAnalyticsSDKTests;
+			productReference = A32C83932182F31100DB5ACA /* BJNewsAnalyticsSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A32C839D2182F31100DB5ACA /* BJNewsAnalyticsSDKUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A32C83AD2182F31100DB5ACA /* Build configuration list for PBXNativeTarget "BJNewsAnalyticsSDKUITests" */;
+			buildPhases = (
+				A32C839A2182F31100DB5ACA /* Sources */,
+				A32C839B2182F31100DB5ACA /* Frameworks */,
+				A32C839C2182F31100DB5ACA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A32C83A02182F31100DB5ACA /* PBXTargetDependency */,
+			);
+			name = BJNewsAnalyticsSDKUITests;
+			productName = BJNewsAnalyticsSDKUITests;
+			productReference = A32C839E2182F31100DB5ACA /* BJNewsAnalyticsSDKUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A32C83732182F2FC00DB5ACA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "派博在线（北京）科技有限责任公司";
+				TargetAttributes = {
+					A32C837A2182F2FC00DB5ACA = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					A32C83922182F31100DB5ACA = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = A32C837A2182F2FC00DB5ACA;
+					};
+					A32C839D2182F31100DB5ACA = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = A32C837A2182F2FC00DB5ACA;
+					};
+				};
+			};
+			buildConfigurationList = A32C83762182F2FC00DB5ACA /* Build configuration list for PBXProject "BJNewsAnalyticsSDK" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A32C83722182F2FC00DB5ACA;
+			productRefGroup = A32C837C2182F2FC00DB5ACA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A32C837A2182F2FC00DB5ACA /* BJNewsAnalyticsSDK */,
+				A32C83922182F31100DB5ACA /* BJNewsAnalyticsSDKTests */,
+				A32C839D2182F31100DB5ACA /* BJNewsAnalyticsSDKUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A32C83792182F2FC00DB5ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32C838B2182F31100DB5ACA /* LaunchScreen.storyboard in Resources */,
+				A32C83882182F31100DB5ACA /* Assets.xcassets in Resources */,
+				A32C83862182F2FD00DB5ACA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32C83912182F31100DB5ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32C839C2182F31100DB5ACA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A0B03B3D441BA5705919FA8D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BJNewsAnalyticsSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A32C83772182F2FC00DB5ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32C83832182F2FC00DB5ACA /* ViewController.m in Sources */,
+				A32C83B62182F6AB00DB5ACA /* BJNewsAnalyticsManager.m in Sources */,
+				A32C83C02183235200DB5ACA /* BJNewsAnalyticsCache.m in Sources */,
+				A32C838E2182F31100DB5ACA /* main.m in Sources */,
+				A32C83BD218309B800DB5ACA /* BJNewsAnalyticsNetwork.m in Sources */,
+				A32C83802182F2FC00DB5ACA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32C838F2182F31100DB5ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32C83982182F31100DB5ACA /* BJNewsAnalyticsSDKTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A32C839A2182F31100DB5ACA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A32C83A32182F31100DB5ACA /* BJNewsAnalyticsSDKUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A32C83952182F31100DB5ACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A32C837A2182F2FC00DB5ACA /* BJNewsAnalyticsSDK */;
+			targetProxy = A32C83942182F31100DB5ACA /* PBXContainerItemProxy */;
+		};
+		A32C83A02182F31100DB5ACA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A32C837A2182F2FC00DB5ACA /* BJNewsAnalyticsSDK */;
+			targetProxy = A32C839F2182F31100DB5ACA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A32C83842182F2FD00DB5ACA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32C83852182F2FD00DB5ACA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A32C83892182F31100DB5ACA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A32C838A2182F31100DB5ACA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A32C83A52182F31100DB5ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A32C83A62182F31100DB5ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A32C83A82182F31100DB5ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD4F96309926FBEFC29DB09C /* Pods-BJNewsAnalyticsSDK.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42LRDW5LP3;
+				INFOPLIST_FILE = BJNewsAnalyticsSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bjnews.BJNewsAnalyticsSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A32C83A92182F31100DB5ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F3FFF17E2C1DCC481C18049 /* Pods-BJNewsAnalyticsSDK.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42LRDW5LP3;
+				INFOPLIST_FILE = BJNewsAnalyticsSDK/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bjnews.BJNewsAnalyticsSDK;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A32C83AB2182F31100DB5ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42LRDW5LP3;
+				INFOPLIST_FILE = BJNewsAnalyticsSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bjnews.BJNewsAnalyticsSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BJNewsAnalyticsSDK.app/BJNewsAnalyticsSDK";
+			};
+			name = Debug;
+		};
+		A32C83AC2182F31100DB5ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42LRDW5LP3;
+				INFOPLIST_FILE = BJNewsAnalyticsSDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bjnews.BJNewsAnalyticsSDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BJNewsAnalyticsSDK.app/BJNewsAnalyticsSDK";
+			};
+			name = Release;
+		};
+		A32C83AE2182F31100DB5ACA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42LRDW5LP3;
+				INFOPLIST_FILE = BJNewsAnalyticsSDKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bjnews.BJNewsAnalyticsSDKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BJNewsAnalyticsSDK;
+			};
+			name = Debug;
+		};
+		A32C83AF2182F31100DB5ACA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42LRDW5LP3;
+				INFOPLIST_FILE = BJNewsAnalyticsSDKUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cn.com.bjnews.BJNewsAnalyticsSDKUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BJNewsAnalyticsSDK;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A32C83762182F2FC00DB5ACA /* Build configuration list for PBXProject "BJNewsAnalyticsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32C83A52182F31100DB5ACA /* Debug */,
+				A32C83A62182F31100DB5ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A32C83A72182F31100DB5ACA /* Build configuration list for PBXNativeTarget "BJNewsAnalyticsSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32C83A82182F31100DB5ACA /* Debug */,
+				A32C83A92182F31100DB5ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A32C83AA2182F31100DB5ACA /* Build configuration list for PBXNativeTarget "BJNewsAnalyticsSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32C83AB2182F31100DB5ACA /* Debug */,
+				A32C83AC2182F31100DB5ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A32C83AD2182F31100DB5ACA /* Build configuration list for PBXNativeTarget "BJNewsAnalyticsSDKUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A32C83AE2182F31100DB5ACA /* Debug */,
+				A32C83AF2182F31100DB5ACA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A32C83732182F2FC00DB5ACA /* Project object */;
+}
