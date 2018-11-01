@@ -17,4 +17,10 @@
  */
 + (BJNewsAnalyticsCache *)defaultManager;
 
+- (void)cleanCahce;
+
+- (void)synchronizeClickRateWithList:(NSArray *)newsList;
+
+- (void)synchronizeSharedRateWithList:(NSArray *)newsList;
+
 @end

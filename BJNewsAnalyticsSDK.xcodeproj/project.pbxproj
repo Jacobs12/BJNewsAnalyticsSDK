@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A32B87592187F2D400D2B809 /* BJNewsAnalyticsAppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A32B87582187F2D400D2B809 /* BJNewsAnalyticsAppInfo.m */; };
+		A32B875D2187FFBD00D2B809 /* BJNewsAnalyticsNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A32B875C2187FFBD00D2B809 /* BJNewsAnalyticsNewsModel.m */; };
+		A32B87602188026F00D2B809 /* BJNewsAnalyticsClick.m in Sources */ = {isa = PBXBuildFile; fileRef = A32B875F2188026F00D2B809 /* BJNewsAnalyticsClick.m */; };
 		A32C83802182F2FC00DB5ACA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C837F2182F2FC00DB5ACA /* AppDelegate.m */; };
 		A32C83832182F2FC00DB5ACA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C83822182F2FC00DB5ACA /* ViewController.m */; };
 		A32C83862182F2FD00DB5ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A32C83842182F2FD00DB5ACA /* Main.storyboard */; };
@@ -18,6 +21,7 @@
 		A32C83B62182F6AB00DB5ACA /* BJNewsAnalyticsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C83B52182F6AB00DB5ACA /* BJNewsAnalyticsManager.m */; };
 		A32C83BD218309B800DB5ACA /* BJNewsAnalyticsNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C83BC218309B800DB5ACA /* BJNewsAnalyticsNetwork.m */; };
 		A32C83C02183235200DB5ACA /* BJNewsAnalyticsCache.m in Sources */ = {isa = PBXBuildFile; fileRef = A32C83BF2183235200DB5ACA /* BJNewsAnalyticsCache.m */; };
+		A3A34C5E2186EAEC00A79C85 /* BJNewsAnalyticsDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A3A34C5D2186EAEC00A79C85 /* BJNewsAnalyticsDeviceModel.m */; };
 		E90EE6F78E11693C963B0780 /* libPods-BJNewsAnalyticsSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BA8FA847959081418363824D /* libPods-BJNewsAnalyticsSDK.a */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +44,12 @@
 
 /* Begin PBXFileReference section */
 		2F3FFF17E2C1DCC481C18049 /* Pods-BJNewsAnalyticsSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJNewsAnalyticsSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-BJNewsAnalyticsSDK/Pods-BJNewsAnalyticsSDK.release.xcconfig"; sourceTree = "<group>"; };
+		A32B87572187F2D400D2B809 /* BJNewsAnalyticsAppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsAnalyticsAppInfo.h; sourceTree = "<group>"; };
+		A32B87582187F2D400D2B809 /* BJNewsAnalyticsAppInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsAnalyticsAppInfo.m; sourceTree = "<group>"; };
+		A32B875B2187FFBD00D2B809 /* BJNewsAnalyticsNewsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsAnalyticsNewsModel.h; sourceTree = "<group>"; };
+		A32B875C2187FFBD00D2B809 /* BJNewsAnalyticsNewsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsAnalyticsNewsModel.m; sourceTree = "<group>"; };
+		A32B875E2188026F00D2B809 /* BJNewsAnalyticsClick.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsAnalyticsClick.h; sourceTree = "<group>"; };
+		A32B875F2188026F00D2B809 /* BJNewsAnalyticsClick.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsAnalyticsClick.m; sourceTree = "<group>"; };
 		A32C837B2182F2FC00DB5ACA /* BJNewsAnalyticsSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BJNewsAnalyticsSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A32C837E2182F2FC00DB5ACA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A32C837F2182F2FC00DB5ACA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +73,8 @@
 		A32C83BC218309B800DB5ACA /* BJNewsAnalyticsNetwork.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsAnalyticsNetwork.m; sourceTree = "<group>"; };
 		A32C83BE2183235200DB5ACA /* BJNewsAnalyticsCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsAnalyticsCache.h; sourceTree = "<group>"; };
 		A32C83BF2183235200DB5ACA /* BJNewsAnalyticsCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsAnalyticsCache.m; sourceTree = "<group>"; };
+		A3A34C5C2186EAEC00A79C85 /* BJNewsAnalyticsDeviceModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BJNewsAnalyticsDeviceModel.h; sourceTree = "<group>"; };
+		A3A34C5D2186EAEC00A79C85 /* BJNewsAnalyticsDeviceModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BJNewsAnalyticsDeviceModel.m; sourceTree = "<group>"; };
 		BA8FA847959081418363824D /* libPods-BJNewsAnalyticsSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BJNewsAnalyticsSDK.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD4F96309926FBEFC29DB09C /* Pods-BJNewsAnalyticsSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BJNewsAnalyticsSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BJNewsAnalyticsSDK/Pods-BJNewsAnalyticsSDK.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -172,6 +184,9 @@
 			children = (
 				A32C83B42182F6AB00DB5ACA /* BJNewsAnalyticsManager.h */,
 				A32C83B52182F6AB00DB5ACA /* BJNewsAnalyticsManager.m */,
+				A32B875E2188026F00D2B809 /* BJNewsAnalyticsClick.h */,
+				A32B875F2188026F00D2B809 /* BJNewsAnalyticsClick.m */,
+				A3A34C5B2186EAC200A79C85 /* model */,
 				A32C83BA2183099600DB5ACA /* network */,
 				A32C83B72183092D00DB5ACA /* config */,
 				A32C83B92183098B00DB5ACA /* cache */,
@@ -203,6 +218,19 @@
 				A32C83BC218309B800DB5ACA /* BJNewsAnalyticsNetwork.m */,
 			);
 			path = network;
+			sourceTree = "<group>";
+		};
+		A3A34C5B2186EAC200A79C85 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				A3A34C5C2186EAEC00A79C85 /* BJNewsAnalyticsDeviceModel.h */,
+				A3A34C5D2186EAEC00A79C85 /* BJNewsAnalyticsDeviceModel.m */,
+				A32B87572187F2D400D2B809 /* BJNewsAnalyticsAppInfo.h */,
+				A32B87582187F2D400D2B809 /* BJNewsAnalyticsAppInfo.m */,
+				A32B875B2187FFBD00D2B809 /* BJNewsAnalyticsNewsModel.h */,
+				A32B875C2187FFBD00D2B809 /* BJNewsAnalyticsNewsModel.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,11 +386,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A32C83832182F2FC00DB5ACA /* ViewController.m in Sources */,
+				A32B87592187F2D400D2B809 /* BJNewsAnalyticsAppInfo.m in Sources */,
 				A32C83B62182F6AB00DB5ACA /* BJNewsAnalyticsManager.m in Sources */,
 				A32C83C02183235200DB5ACA /* BJNewsAnalyticsCache.m in Sources */,
 				A32C838E2182F31100DB5ACA /* main.m in Sources */,
+				A3A34C5E2186EAEC00A79C85 /* BJNewsAnalyticsDeviceModel.m in Sources */,
 				A32C83BD218309B800DB5ACA /* BJNewsAnalyticsNetwork.m in Sources */,
 				A32C83802182F2FC00DB5ACA /* AppDelegate.m in Sources */,
+				A32B87602188026F00D2B809 /* BJNewsAnalyticsClick.m in Sources */,
+				A32B875D2187FFBD00D2B809 /* BJNewsAnalyticsNewsModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -535,7 +567,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42LRDW5LP3;
 				INFOPLIST_FILE = BJNewsAnalyticsSDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -554,7 +586,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 42LRDW5LP3;
 				INFOPLIST_FILE = BJNewsAnalyticsSDK/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

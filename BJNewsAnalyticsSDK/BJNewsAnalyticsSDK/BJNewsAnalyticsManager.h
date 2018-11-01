@@ -31,11 +31,42 @@
 + (BJNewsAnalyticsManager *)defaultManager;
 
 /**
+ 清空缓存
+ */
+- (void)cleanCache;
+
+/**
  上传数据，其中只有一个请求在进行，不会重复上传
  
  @param completed 上传成功回调
  @param failed 上传失败回调
  */
 - (void)upLoadDataCompleted:(void (^) (void))completed failed:(void (^) (void))failed;
+
+#pragma mark - 统计分析
+
+/**
+ 开始统计文章点击量、每篇稿子阅读时长
+ 需要在viewDidDisappear方法中调用endEventWithNewsID
+ 
+ @param newsID 文章ID
+ @param title 文章标题
+ */
+- (void)beginEventWithNewsID:(NSString *)newsID title:(NSString *)title;
+
+/**
+ 结束统计事件
+ 
+ @param newsID 文章ID
+ */
+- (void)endEventWithNewsID:(NSString *)newsID;
+
+/**
+ 分享某一篇文章后统计事件
+ 
+ @param newsID 文章ID
+ @param title 文章标题
+ */
+- (void)sharedWithNewsID:(NSString *)newsID title:(NSString *)title;
 
 @end

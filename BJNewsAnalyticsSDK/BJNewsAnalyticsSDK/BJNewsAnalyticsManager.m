@@ -8,12 +8,22 @@
 
 #import "BJNewsAnalyticsManager.h"
 #import "BJNewsAnalyticsNetwork.h"
+#import "BJNewsAnalyticsClick.h"
+#import "BJNewsAnalyticsCache.h"
 
 static BJNewsAnalyticsManager * analyticsManager = nil;
 
 @interface BJNewsAnalyticsManager ()
 
+/**
+ 记录是否正在上传数据，以免发生重复上传
+ */
 @property (nonatomic,assign) BOOL isUploading;
+
+/**
+ 统计点击量、分享量
+ */
+@property (nonatomic,strong) BJNewsAnalyticsClick * clickManager;
 
 @end
 
@@ -50,6 +60,13 @@ static BJNewsAnalyticsManager * analyticsManager = nil;
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(analyticsApplicationWillEnterForeground) name:UIApplicationWillEnterForegroundNotification object:nil];
 }
 
+- (BJNewsAnalyticsClick *)clickManager{
+    if(_clickManager == nil){
+        _clickManager = [[BJNewsAnalyticsClick alloc]init];
+    }
+    return _clickManager;
+}
+
 #pragma mark - App 动作
 
 /**
@@ -84,6 +101,13 @@ static BJNewsAnalyticsManager * analyticsManager = nil;
 #pragma mark - 上传数据
 
 /**
+ 清空缓存
+ */
+- (void)cleanCache{
+    [[BJNewsAnalyticsCache defaultManager] cleanCahce];
+}
+
+/**
  上传数据，其中只有一个请求在进行，不会重复上传
 
  @param completed 上传成功回调
@@ -105,6 +129,38 @@ static BJNewsAnalyticsManager * analyticsManager = nil;
         self.isUploading = NO;
     }];
    
+}
+
+#pragma mark - 统计分析
+
+/**
+ 开始统计文章点击量、每篇稿子阅读时长
+ 需要在viewDidDisappear方法中调用endEventWithNewsID
+ 
+ @param newsID 文章ID
+ @param title 文章标题
+ */
+- (void)beginEventWithNewsID:(NSString *)newsID title:(NSString *)title{
+    [self.clickManager beginEventWithNewsID:newsID title:title];
+}
+
+/**
+ 结束统计事件
+ 
+ @param newsID 文章ID
+ */
+- (void)endEventWithNewsID:(NSString *)newsID{
+    [self.clickManager endEventWithNewsID:newsID];
+}
+
+/**
+ 分享某一篇文章后统计事件
+ 
+ @param newsID 文章ID
+ @param title 文章标题
+ */
+- (void)sharedWithNewsID:(NSString *)newsID title:(NSString *)title{
+    [self.clickManager sharedWithNewsID:newsID title:title];
 }
 
 @end
