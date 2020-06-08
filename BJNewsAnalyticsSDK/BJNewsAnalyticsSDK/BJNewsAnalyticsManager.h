@@ -69,6 +69,7 @@
  */
 - (void)sharedWithNewsID:(NSString *)newsID title:(NSString *)title;
 
+// 这是master测试
 // 这是一个分支测试
 // 这是一个分支测试2
 
