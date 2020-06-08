@@ -69,4 +69,6 @@
  */
 - (void)sharedWithNewsID:(NSString *)newsID title:(NSString *)title;
 
+//这是master的测试
+
 @end
